@@ -1,0 +1,40 @@
+﻿<Window x:Class="V4._0.vids"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:V4._0"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Электронно-учебное пособие по дисциплине 'Информационная Безопасность'" ResizeMode="NoResize" Height="450" Width="800" Icon="/Res/icon.ico">
+    <Grid Background="#90bcbd">
+
+        <GroupBox Header="Управление" Foreground="#FFF" FontSize="16" HorizontalAlignment="Left" Width="240" Height="302" VerticalAlignment="Center" Margin="10,0,0,0">
+            <Grid>
+                <Label Content="Выбор видео:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+                <ComboBox x:Name="cb1" Margin="0,46,0,0" VerticalAlignment="Top" FontSize="16" Foreground="Black" SelectionChanged="cb1_SelectionChanged" HorizontalAlignment="Center" Width="218"/>
+                <Button x:Name="btnAdd"     Click="btnAdd_Click"        Content="Добавить"          HorizontalAlignment="Center" Margin="0,78,0,0" VerticalAlignment="Top" Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="24" Width="218"/>
+                <Button x:Name="btnRemove"  Click="btnRemove_Click"     Content="Удалить текущую"   HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" Width="218" Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="24"/>
+                <Button                     Click="Button_Click"        Content="Скачать текущую"   HorizontalAlignment="Center" Margin="0,162,0,0" VerticalAlignment="Top" Width="218" Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="24"/>
+                <Button                     Click="Button_Click_1"      Content="На главную"        HorizontalAlignment="Center" Margin="0,204,0,0" VerticalAlignment="Top" Width="218" Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="24"/>
+
+            </Grid>
+        </GroupBox>
+        <Label Content="Предварительный просмотр:" HorizontalAlignment="Left" Margin="250,10,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <Grid Margin="255,55,28,33">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <MediaElement Source="http://hubblesource.stsci.edu/sources/video/clips/details/images/hst_1.mpg" LoadedBehavior="Manual" Name="mePlayer" />
+            <StackPanel Grid.Row="1">
+                <Label Name="lblStatus" Foreground="#FFF" Content="" HorizontalContentAlignment="Center" Margin="5" />
+                <WrapPanel HorizontalAlignment="Center">
+                    <Button Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="16" Name="btnPlay" Click="btnPlay_Click">Воспроизвести</Button>
+                    <Button Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="16" Name="btnPause" Margin="5,0" Click="btnPause_Click">Пауза</Button>
+                    <Button Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="16" Name="btnStop" Click="btnStop_Click">Стоп</Button>
+                </WrapPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

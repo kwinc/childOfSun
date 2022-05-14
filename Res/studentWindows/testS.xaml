@@ -1,0 +1,33 @@
+﻿<Window x:Class="V4._0.Res.studentWindows.testS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:V4._0.Res.studentWindows"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"        
+        Title="Электронно-учебное пособие по дисциплине 'Информационная Безопасность'" ResizeMode="NoResize" Height="374" Width="800" Icon="/Res/icon.ico">
+    <Grid Background="#90bcbd">
+
+        <GroupBox Header="Управление" Foreground="#FFF" FontSize="16" Height="211" VerticalAlignment="Top" Margin="10,10,484,0">
+            <Grid>
+                <Label Content="Выбор теста:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <ComboBox x:Name="cb1" Margin="10,46,13,0" VerticalAlignment="Top" SelectionChanged="cb1_SelectionChanged"/>
+                <Button Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" Click="Button_Click" Content="На главную" Margin="10,135,13,0" VerticalAlignment="Top" FontSize="24"/>
+                <Label x:Name="lbres1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Foreground="White" Margin="10,78,0,0" Width="271" Height="52"/>
+
+            </Grid>
+        </GroupBox>
+        <TextBlock x:Name="rtbQuestion" HorizontalAlignment="Left" Margin="353,18,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Height="72" Width="401" TextWrapping="Wrap"/>
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Disabled" Margin="353,95,46,73">
+            <Grid>
+                <RadioButton x:Name="rba1" Foreground="#FFF" GroupName="ans" Content="" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Top" Margin="10,10,0,0"/>
+                <RadioButton x:Name="rba2" Foreground="#FFF" GroupName="ans" Content="" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Top" Margin="10,66,0,0"/>
+                <RadioButton x:Name="rba3" Foreground="#FFF" GroupName="ans" Content="" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Top" Margin="10,118,0,0"/>
+            </Grid>
+        </ScrollViewer>
+        <Button Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" x:Name="btnNext" Click="btnNext_Click" Content="Далее" HorizontalAlignment="Left" Margin="483,290,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="24" Width="271"/>
+
+
+    </Grid>
+</Window>

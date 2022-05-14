@@ -1,0 +1,82 @@
+﻿<Window x:Class="V4._0.crosswrd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:V4._0"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Электронно-учебное пособие по дисциплине 'Информационная Безопасность'" ResizeMode="NoResize" Height="680" Width="1082" Icon="/Res/icon.ico">
+    <Grid Background="#90bcbd">
+
+        <GroupBox Header="Управление" Foreground="#FFF" FontSize="16" VerticalAlignment="Center" Margin="10,0,0,0" Height="592" HorizontalAlignment="Left" Width="368">
+            <Grid>
+                <Label Content="Выбор кроссворда для редактирования:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="16" Margin="10,10,0,0"/>
+                <ComboBox x:Name="cb1" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="284" SelectionChanged="cb1_SelectionChanged"/>
+
+                <Button Click="Button_Click_1"    Content="Добавить новый"  HorizontalAlignment="Center" Margin="0,78,0,0"    VerticalAlignment="Top"     Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="24" Width="284"/>
+                <Button Click="Button_Click_2"  Content="Удалить текущий" HorizontalAlignment="Center" Margin="0,120,0,0"   VerticalAlignment="Top"     Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="24" Width="284"/>
+                <Button Click="Button_Click"  Content="На главную"      HorizontalAlignment="Center" Margin="0,161,0,0"   VerticalAlignment="Top"     Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="24" Width="284"/>
+                <Label Content="Вопросы к кроссворду:" HorizontalAlignment="Left" Margin="10,203,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+                <RichTextBox x:Name="tb1" Margin="36,239,39,110"/>
+                <Button Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="24" Click="Button_Click_3"  Content="Сохранить" HorizontalAlignment="Left" Margin="36,459,0,0" VerticalAlignment="Top"  Width="281"/>
+
+            </Grid>
+        </GroupBox>
+
+        <!--ComboBox x:Name="cb1" HorizontalAlignment="Left" Margin="40,71,0,0" VerticalAlignment="Top" Width="301" SelectionChanged="cb1_SelectionChanged"/>
+        <Button Click="Button_Click"  Content="На главную" HorizontalAlignment="Left" Margin="40,214,0,0" VerticalAlignment="Top" FontSize="16" Width="271"/>
+        <Button Click="Button_Click_1" Content="Добавить новый" HorizontalAlignment="Left" Margin="40,121,0,0" VerticalAlignment="Top" Width="271" FontSize="16"/>
+        <Button Click="Button_Click_2"  Content="Удалить текущий" HorizontalAlignment="Left" Margin="40,167,0,0" VerticalAlignment="Top" FontSize="16" Width="271"/-->
+        <!--TextBox x:Name="tb1" HorizontalAlignment="Left" Margin="40,292,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="271" Height="190"/-->
+
+        <Grid x:Name="grid1" Height="500" Width="500" VerticalAlignment="Center" Margin="412,0,69,0" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.15*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+            </Grid.ColumnDefinitions>
+
+        </Grid>
+
+    </Grid>
+</Window>

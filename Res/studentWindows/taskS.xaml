@@ -1,0 +1,28 @@
+﻿<Window x:Class="V4._0.Res.studentWindows.taskS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:V4._0.Res.studentWindows"
+        WindowStartupLocation="CenterScreen"        
+        mc:Ignorable="d"
+        Title="Электронно-учебное пособие по дисциплине 'Информационная Безопасность'" ResizeMode="NoResize" Height="450" Width="800" Icon="/Res/icon.ico">
+    <Grid Background="#90bcbd">
+        <GroupBox Header="Управление" Foreground="#FFF" FontSize="16" Margin="10,20,472,35">
+            <Grid>
+                <Label Foreground="#FFF" Content="Выбор задания:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+                <ComboBox x:Name="cb1" Margin="10,46,10,0" SelectionChanged="cb1_SelectionChanged" Height="27" VerticalAlignment="Top"/>
+                <TextBlock x:Name="rtb1" Foreground="#FFF" Margin="10,78,10,0" TextWrapping="Wrap" FontSize="16" Height="207" VerticalAlignment="Top"/>
+                <Button Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" Click="Button_Click_1" Content="На главную" Margin="16,0,16,20" FontSize="24" Height="41" VerticalAlignment="Bottom"/>
+
+            </Grid>
+        </GroupBox>
+        <Border BorderBrush="White" BorderThickness="1" Margin="333,73,40,136">
+            <Image x:Name="imgBox1"/>
+        </Border>
+        <!--Label x:Name="rtb1" Content="" HorizontalAlignment="Left" Margin="34,98,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Height="221" Width="277"/-->
+        <Label Content="Ответ:" Margin="0,0,411,92" Foreground="White" FontSize="16" HorizontalAlignment="Right" Width="56" Height="39" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="tb1" Margin="0,0,40,104" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" Width="366" Height="23" VerticalAlignment="Bottom"/>
+        <Button Click="Button_Click" Content="Сохранить ответ" Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" Margin="0,0,40,62" FontSize="16" Height="37" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="183"/>
+    </Grid>
+</Window>

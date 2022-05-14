@@ -1,0 +1,40 @@
+﻿<Window x:Class="V4._0.test"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:V4._0"
+        mc:Ignorable="d"
+        Title="Электронно-учебное пособие по дисциплине 'Информационная Безопасность'" ResizeMode="NoResize" Height="450" Width="939" Icon="/Res/icon.ico" WindowStartupLocation="CenterScreen">
+    <Grid Background="#90bcbd">
+        <GroupBox Header="Управление" Foreground="#FFF" FontSize="16" VerticalAlignment="Center" Margin="10,0,0,0" Height="252" HorizontalAlignment="Left" Width="307">
+            <Grid>
+                <Label Content="Выбор теста для редактирования:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="16" Margin="10,10,0,0"/>
+                <ComboBox x:Name="cb1" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="284" SelectionChanged="cb1_SelectionChanged"/>
+
+                <Button Click="Button_Click"    Content="Добавить новый"  HorizontalAlignment="Center" Margin="0,78,0,0"    VerticalAlignment="Top"     Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="24" Width="284"/>
+                <Button Click="Button_Click_2"  Content="Удалить текущий" HorizontalAlignment="Center" Margin="0,120,0,0"   VerticalAlignment="Top"     Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="24" Width="284"/>
+                <Button Click="Button_Click_1"  Content="На главную"      HorizontalAlignment="Center" Margin="0,161,0,0"   VerticalAlignment="Top"     Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="24" Width="284"/>
+
+            </Grid>
+        </GroupBox>
+        <ComboBox x:Name="cb2" HorizontalAlignment="Left" Margin="613,71,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb2_SelectionChanged"/>
+        <Label Content="Название теста:" HorizontalAlignment="Left" Margin="342,35,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <Label Content="Номер вопроса:" HorizontalAlignment="Left" Margin="607,35,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <Label Content="Текст Вопроса:" HorizontalAlignment="Left" Margin="342,91,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <Label Content="Варианты ответа:" HorizontalAlignment="Left" Margin="342,217,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+
+        <RadioButton x:Name="rba1" GroupName="ans" Content="" Foreground="#FFF" HorizontalAlignment="Left" Margin="348,264,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rba2" GroupName="ans" Content="" Foreground="#FFF" HorizontalAlignment="Left" Margin="348,302,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rba3" GroupName="ans" Content="" Foreground="#FFF" HorizontalAlignment="Left" Margin="348,339,0,0" VerticalAlignment="Top"/>
+        <Button Click="Button_Click_3" Content="Добавить вопрос" HorizontalAlignment="Left" Margin="750,69,0,0" VerticalAlignment="Top" Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="16" Width="164"/>
+        <Button Click="Button_Click_4" Content="Удалить этот вопрос" HorizontalAlignment="Left" Margin="750,121,0,0" VerticalAlignment="Top" Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" FontSize="16"/>
+        <Button Click="Button_Click_5" Content="Сохранить" HorizontalAlignment="Left" Margin="750,333,0,0" VerticalAlignment="Top" FontSize="16" Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" Width="164"/>
+
+        <TextBox x:Name="tb1" HorizontalAlignment="Left" Margin="348,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" FontSize="16"/>
+        <TextBox x:Name="rtb1" HorizontalAlignment="Left" Margin="348,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" FontSize="16" Height="70"/>
+        <TextBox x:Name="tba1" HorizontalAlignment="Left" Margin="372,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" FontSize="16"/>
+        <TextBox x:Name="tba2" HorizontalAlignment="Left" Margin="372,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" FontSize="16"/>
+        <TextBox x:Name="tba3" HorizontalAlignment="Left" Margin="372,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" FontSize="16"/>
+    </Grid>
+</Window>

@@ -1,0 +1,28 @@
+﻿<Window x:Class="V4._0.lectures"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mpp="clr-namespace:MoonPdfLib;assembly=MoonPdfLib"
+        xmlns:local="clr-namespace:V4._0"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Электронно-учебное пособие по дисциплине 'Информационная Безопасность'" ResizeMode="NoResize" Height="872" Width="1083" Icon="/Res/icon.ico">
+    <Grid Background="#90bcbd">
+        <mpp:MoonPdfPanel Name="pdfPanel" DockPanel.Dock="Bottom" Background="LightGray" ViewType="SinglePage" PageRowDisplay="ContinuousPageRows" PageMargin="0,2,4,2" AllowDrop="True" Margin="378,38,35,37"/>
+
+        <Label Content="Предварительный просмотр:" HorizontalAlignment="Left" Margin="378,10,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+
+
+        <GroupBox HorizontalAlignment="Left" VerticalAlignment="Center" Header="Управление" Foreground="#FFF" FontSize="16" Margin="10,0,0,0" Height="404">
+            <Grid>
+                <Label Content="Выбор лекции:" Foreground="White" FontSize="16" Margin="10,31,207,315"/>
+                <ComboBox x:Name="cb1" FontSize="16" Foreground="Black" SelectionChanged="cb1_SelectionChanged" Margin="10,66,10,0" VerticalAlignment="Top"/>
+                <Button x:Name="btAdd"           Click="Button_Click"   Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" Content="Добавить"         FontSize="24" Margin="10,98,10,223"/>
+                <Button x:Name="btRemove"        Click="Button_Click_1" Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" Content="Удалить текущую"  FontSize="24" Margin="10,158,10,164"/>
+                <Button                          Click="Button_Click_2" Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" Content="Скачать текущую"  FontSize="24" Margin="10,217,10,106"/>
+                <Button                          Click="Button_Click_3" Background="#fc9880" Foreground="#FFF" FontFamily="Comic Sans MS" Content="На главную"       FontSize="24" Margin="10,275,10,47"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
