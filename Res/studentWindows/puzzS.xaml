@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="Электронно-учебное пособие по дисциплине 'Информационная Безопасность'" ResizeMode="NoResize" Height="447" Width="800">
+    <Window.InputBindings>
+        <KeyBinding Command="Help" Key="F1"/>
+    </Window.InputBindings>
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpExecuted" />
+    </Window.CommandBindings>
     <Grid Background="#90bcbd">
         <Border BorderBrush="White" BorderThickness="1" Margin="186,10,186,0" Height="177" VerticalAlignment="Top">
             <Image x:Name="imgBox1" />

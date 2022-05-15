@@ -25,6 +25,10 @@ namespace V4._0
             InitializeComponent();
             reloadComboBox(false, cb1);
         }
+        private void HelpExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(System.IO.Directory.GetCurrentDirectory() + "\\Res\\helpFiles\\help.chm");
+        }
         /*
          * Структура файла с тестом:
          * НазваниеТеста.txt

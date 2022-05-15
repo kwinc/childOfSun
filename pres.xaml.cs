@@ -61,6 +61,10 @@ namespace V4._0
                 cb1.Items.Add(kek + " - " + words[words.Length - 1]);
             }
         }
+        private void HelpExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(System.IO.Directory.GetCurrentDirectory() + "\\Res\\helpFiles\\help.chm");
+        }
 
         private void cb1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

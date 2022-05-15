@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("res/helpfiles/help.chm")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("res/helpfiles/help.chw")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("libmupdf.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("moonpdflib.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("mousekeyboardactivitymonitor.dll")]

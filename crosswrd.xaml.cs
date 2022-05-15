@@ -30,6 +30,10 @@ namespace V4._0
             InitializeComponent();
             reloadComboBox(false, cb1);
         }
+        private void HelpExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(System.IO.Directory.GetCurrentDirectory() + "\\Res\\helpFiles\\help.chm");
+        }
         void reloadComboBox(bool saveActive, ComboBox cb) //если на входе true - с сохранением выбранного элемента (АХТУНГ: У ЭЛЕМЕНТА ОБЯЗАТЕЛЬНО ДОЛЖНО ИЗМЕНИТЬСЯ НАЗВАНИЕ)
         {
             if (saveActive) //если нужно сохранить, то ебёмся (адово бля ебёмся)

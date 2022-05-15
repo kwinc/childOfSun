@@ -6,12 +6,19 @@
         xmlns:local="clr-namespace:V4._0"
         mc:Ignorable="d"
         Title="Электронно-учебное пособие по дисциплине 'Информационная Безопасность'" ResizeMode="NoResize" Height="450" Width="800" Icon="/Res/icon.ico" WindowStartupLocation="CenterScreen">
+    <Window.InputBindings>
+        <KeyBinding Command="Help" Key="F1"/>
+    </Window.InputBindings>
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpExecuted" />
+    </Window.CommandBindings>
     <Grid Background="#90bcbd">
         <Label Content="Логин:" Foreground="#FFFFFF" HorizontalAlignment="Left" Margin="146,157,0,0" VerticalAlignment="Top" FontSize="16" FontStyle="Normal"/>
         <Label Content="Пароль:" Foreground="#FFFFFF" HorizontalAlignment="Left" Margin="136,185,0,0" VerticalAlignment="Top" FontSize="16"/>
         <TextBox x:Name="textBox_login" HorizontalAlignment="Left" Margin="209,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="460" FontSize="16"/>
         <PasswordBox x:Name="textBox_password" HorizontalAlignment="Left" Margin="209,189,0,0" VerticalAlignment="Top" Width="460" FontSize="16"/>
         <Button Background="#fc9880" Foreground="#FFFFFF" Content="Войти" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" Width="120" Height="34" Click="Button_Click" IsDefault="True" Margin="0,217,0,0"/>
+        <Button Background="#fc9880" Foreground="#FFFFFF" Content="Справка" FontSize="16" Click="Button_Click_1"  IsDefault="True" Margin="465,217,0,0" HorizontalAlignment="Left" Width="120" Height="34" VerticalAlignment="Top"/>
         <!--Button Click="Button_Click_1" Content="Админская кнопка" HorizontalAlignment="Left" Margin="525,374,0,0" VerticalAlignment="Top" FontSize="24"/-->
     </Grid>
 </Window>

@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="Электронно-учебное пособие по дисциплине 'Информационная Безопасность'" ResizeMode="NoResize" Height="416" Width="800">
+    <Window.InputBindings>
+        <KeyBinding Command="Help" Key="F1"/>
+    </Window.InputBindings>
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpExecuted" />
+    </Window.CommandBindings>
     <Grid Background="#90bcbd">
 
         <GroupBox Header="Управление" Foreground="#FFF" FontSize="16" VerticalAlignment="Center" Margin="10,0,0,0" Height="252" HorizontalAlignment="Left" Width="307">

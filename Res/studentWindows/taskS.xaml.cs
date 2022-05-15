@@ -37,6 +37,10 @@ namespace V4._0.Res.studentWindows
             //var brushBlack = (Brush)converter.ConvertFromString("#fdc25e");
             //var brushRed = (Brush)converter.ConvertFromString("#b9848a");
         }
+        private void HelpExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(System.IO.Directory.GetCurrentDirectory() + "\\Res\\helpFiles\\help.chm");
+        }
         void reloadComboBox()
         {
             cb1.Items.Clear();

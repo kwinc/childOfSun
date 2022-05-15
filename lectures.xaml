@@ -8,6 +8,12 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="Электронно-учебное пособие по дисциплине 'Информационная Безопасность'" ResizeMode="NoResize" Height="872" Width="1083" Icon="/Res/icon.ico">
+    <Window.InputBindings>
+        <KeyBinding Command="Help" Key="F1"/>
+    </Window.InputBindings>
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpExecuted" />
+    </Window.CommandBindings>
     <Grid Background="#90bcbd">
         <mpp:MoonPdfPanel Name="pdfPanel" DockPanel.Dock="Bottom" Background="LightGray" ViewType="SinglePage" PageRowDisplay="ContinuousPageRows" PageMargin="0,2,4,2" AllowDrop="True" Margin="378,38,35,37"/>
 

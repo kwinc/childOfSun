@@ -47,3 +47,5 @@ D:\service\Desktop\Практика\VisualProjects\V4.0\obj\x64\Release\V4.0.pdb
 D:\service\Desktop\Практика\VisualProjects\V4.0\bin\x64\Release\MoonPdfLib.dll
 D:\service\Desktop\Практика\VisualProjects\V4.0\bin\x64\Release\MouseKeyboardActivityMonitor.dll
 D:\service\Desktop\Практика\VisualProjects\V4.0\obj\x64\Release\V4.0_Content.g.cs
+D:\service\Desktop\Практика\VisualProjects\V4.0\bin\x64\Release\Res\helpFiles\help.chm
+D:\service\Desktop\Практика\VisualProjects\V4.0\bin\x64\Release\Res\helpFiles\help.chw

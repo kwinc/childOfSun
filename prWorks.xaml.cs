@@ -35,6 +35,10 @@ namespace V4._0
                 cb1.Items.Add(words[words.Length - 1]);
             }
         }
+        private void HelpExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(System.IO.Directory.GetCurrentDirectory() + "\\Res\\helpFiles\\help.chm");
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {

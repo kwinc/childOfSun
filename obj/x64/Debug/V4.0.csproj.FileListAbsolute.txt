@@ -47,3 +47,5 @@ D:\service\Desktop\Практика\VisualProjects\V4.0\obj\x64\Debug\Res\studen
 D:\service\Desktop\Практика\VisualProjects\V4.0\obj\x64\Debug\Res\studentWindows\crosswordS.baml
 D:\service\Desktop\Практика\VisualProjects\V4.0\bin\x64\Debug\MoonPdfLib.dll
 D:\service\Desktop\Практика\VisualProjects\V4.0\bin\x64\Debug\MouseKeyboardActivityMonitor.dll
+D:\service\Desktop\Практика\VisualProjects\V4.0\bin\x64\Debug\Res\helpFiles\help.chm
+D:\service\Desktop\Практика\VisualProjects\V4.0\bin\x64\Debug\Res\helpFiles\help.chw

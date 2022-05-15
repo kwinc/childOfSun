@@ -31,6 +31,11 @@ namespace V4._0.Res.studentWindows
             btnRepeat.IsEnabled = false;
         }
 
+        private void HelpExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(System.IO.Directory.GetCurrentDirectory() + "\\Res\\helpFiles\\help.chm");
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e) //"Далее"
         {
             if (count <= allfiles.Length - 1 && status)

@@ -6,6 +6,12 @@
         xmlns:local="clr-namespace:V4._0"
         mc:Ignorable="d"
         Title="Электронно-учебное пособие по дисциплине 'Информационная Безопасность'" ResizeMode="NoResize" Height="450" Width="939" Icon="/Res/icon.ico" WindowStartupLocation="CenterScreen">
+    <Window.InputBindings>
+        <KeyBinding Command="Help" Key="F1"/>
+    </Window.InputBindings>
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpExecuted" />
+    </Window.CommandBindings>
     <Grid Background="#90bcbd">
         <GroupBox Header="Управление" Foreground="#FFF" FontSize="16" VerticalAlignment="Center" Margin="10,0,0,0" Height="252" HorizontalAlignment="Left" Width="307">
             <Grid>

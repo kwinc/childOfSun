@@ -28,6 +28,10 @@ namespace V4._0
         {
             InitializeComponent();
         }
+        private void HelpExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(System.IO.Directory.GetCurrentDirectory() + "\\Res\\helpFiles\\help.chm");
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (!(textBox_login.Text == ""))
@@ -80,6 +84,11 @@ namespace V4._0
             {
                 MessageBox.Show("Логин где?");
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(System.IO.Directory.GetCurrentDirectory() + "\\Res\\helpFiles\\help.chm");
         }
     }
 }
